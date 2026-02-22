@@ -1,0 +1,70 @@
+🔥 Stack vs Heap (Interview Explanation)
+✅ One-line definition
+
+--------------------------------------------------------------------------
+👉 Stack → Automatic memory used for function calls and local variables
+👉 Heap → Dynamic memory manually managed by the programmer
+--------------------------------------------------------------------------
+
+High Address
+──────────────
+|    Stack   |  ← grows downward ⬇
+|            |
+|------------|
+|            |
+|    Heap    |  ← grows upward ⬆
+|            |
+──────────────
+Low Address
+
+---------------------------------------------------------------------------
+
+📦 Stack Memory ✅ Key characteristics
+
+Automatically allocated & freed
+Very fast
+Limited size
+Managed by compiler
+Stores:
+    Local variables
+    Function parameters
+    Return addresses
+
+.....................................
+void func() {
+    int x = 10;  // stored in stack
+}
+......................................
+
+👉 When function exits → memory automatically freed
+
+⚡ Interview points
+    LIFO (Last In First Out)
+    Fast allocation
+    No memory leak risk
+    Size is limited
+    Lifetime tied to scope
+
+--------------------------------------------------------------------------
+
+📦 Heap Memory ✅ Key characteristics
+
+    Manually allocated
+    Slower than stack
+    Large size
+    Managed by programmer
+    Used for dynamic objects
+
+..............................................
+int* ptr = new int(10);  // heap allocation
+delete ptr;              // must free manually
+..............................................
+
+⚠️ Risks (VERY IMPORTANT for interview)
+
+Heap can cause:
+    Memory leaks
+    Dangling pointer
+    Fragmentation
+    Double free
+

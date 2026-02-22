@@ -1,0 +1,12 @@
+int main() {
+    int* arr = new int[5];
+    delete arr;   // ❌
+    //delete[] arr; // ✅
+}
+
+//  Because:
+//      Single object → delete
+//      Array → delete[]
+
+//  🎯 One-liner
+//  Memory allocated with new[] must be freed with delete[].
