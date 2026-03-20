@@ -15,3 +15,4 @@ delete c;
 Car* c = (Car*) malloc(sizeof(Car));// constructor is NOT called
 
 delete c;
+//free(c);
