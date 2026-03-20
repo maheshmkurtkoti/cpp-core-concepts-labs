@@ -1,0 +1,7 @@
+| Feature           | vector            | unique_ptr array           |
+| ----------------- | ----------------- | -------------------------- |
+| Memory management | automatic         | automatic                  |
+| Resizable         | ✔                 | ✖                          |
+| STL support       | ✔                 | ✖                          |
+| Performance       | excellent         | slightly lower abstraction |
+| Use case          | almost everything | low-level arrays           |

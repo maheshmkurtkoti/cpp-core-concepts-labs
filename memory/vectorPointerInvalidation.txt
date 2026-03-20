@@ -1,0 +1,19 @@
+Important Rule
+
+These operations can invalidate:
+
+push_back()
+emplace_back()
+insert()
+resize()
+reserve()
+
+They may trigger reallocation.
+
+Which containers do NOT invalidate pointers easily?
+Container	    Pointer     Stability
+vector	          ❌        unstable
+deque	           ⚠       sometimes
+list	          ✅        stable
+forward_list	  ✅        stable
+map/set	          ✅        stable

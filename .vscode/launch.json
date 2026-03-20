@@ -1,5 +1,7 @@
 {
     "configurations": [
+
+
         {
             "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
@@ -24,7 +26,7 @@
                     "ignoreFailures": false
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file"
+            "preLaunchTask": "build cpp"
         }
     ],
     "version": "2.0.0"
